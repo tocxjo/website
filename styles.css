@@ -1,0 +1,85 @@
+/* sorry if this is a mess... */
+
+@font-face {
+    font-family: Terminus;
+    src: url(fonts/Terminus.ttf) format('truetype'),
+         url(fonts/Terminus_b.ttf) format('truetype'),
+         url(fonts/Terminus_i.ttf) format('truetype'),
+         url(fonts/Terminus_bi.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: fixedsys; 
+    src: url(fonts/fixedsys.ttf) format('truetype');  
+}
+
+@font-face {
+    font-family: gothic;
+    src: url(fonts/gothic.ttf) format('truetype');
+}
+
+html {
+    /* background-color: #050505; */
+    background: url("images/bg.gif");
+    font-family: fixedsys;
+    color: white;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.container {
+    width: 45%;
+    position: sticky;
+    left: 25%;
+    border: 2px solid;
+    border-color: purple;
+    border-radius: 2px;
+    padding: 10px;
+    background: linear-gradient(
+        35deg,
+        rgba(10, 10, 10, 0.5),
+        rgba(128, 0, 128, 1)
+        200%
+    );
+    margin-bottom: 8px;
+}
+
+.title {
+    font-family: Terminus;
+    font-size: 22px;
+    font-style: italic;
+    background-image: linear-gradient(violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.info {
+    font-size: 16px;
+    font-family: gothic;
+    font-style: italic;
+}
+
+h1 {
+    font-style: inherit;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+    margin: 5px;
+    border: 2px;
+}
+
+a:hover {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    transition: 0.1s;
+}
+
+.footer {
+    position: relative;
+    left: -2%;
+}
